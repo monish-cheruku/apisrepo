@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "a726df8a-a78a-4aa5-a46c-6af7c53e94eb",
+		"name": "PFdetails",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPFdetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selectedcandidateid\":1,\r\n    \"PreviousCompanyUAN\":\"098765\",\r\n    \"PreviousMemberId\":\"8765\",\r\n    \"MemberNameAsPerAadhar\":\"qwerg\",\r\n    \"AADHAR\":\"0987653215432\",\r\n    \"DateOfBirth\":\"2000-05-22\",\r\n    \"Date_Of_Joining\":\"2023-01-23\",\r\n    \"Gender\":\"male\",\r\n    \"FatherOrHusbandName\":\"lkjh\",\r\n    \"Relation\":\"Father\",\r\n    \"Marital_status\":\"Married\",\r\n    \"InternationalWorker\":\"False\",\r\n    \"ContactNumber\":\"1234567890\",\r\n    \"Email\":\"kjhg@cse.com\",\r\n    \"Nationality\":\"Indian\",\r\n    \"wages\":\"567890\",\r\n    \"Qualification\":\"B.Tech\",\r\n    \"CountryOfOrigin\":\"India\",\r\n    \"PassportNumber\":\"09876efbnj987\",\r\n    \"PassportValidFrom\":\"2021-2-09\",\r\n    \"PassportValidTill\":\"2031-2-23\",\r\n    \"PhysicalHandicap\":\"False\",\r\n    \"AccountNumber\":\"098765431345\",\r\n    \"IFSCcode\":\"sdf2345gf\",\r\n    \"NameAsPerBank\":\"okjfdwerth\",\r\n    \"PAN\":\"12345jht34\",\r\n    \"NameAsPerPan\":\"asdpoiuyt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.154.20.135:8000/api/selectedcandidate/createPFdetail",
+					"protocol": "http",
+					"host": [
+						"10",
+						"154",
+						"20",
+						"135"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"selectedcandidate",
+						"createPFdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPFdetails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selectedcandidateid\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.154.20.135:8000/api/selectedcandidate/getPFdetails",
+					"protocol": "http",
+					"host": [
+						"10",
+						"154",
+						"20",
+						"135"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"selectedcandidate",
+						"getPFdetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatePFdetail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\":3,\r\n    \"selectedcandidateid\":1,\r\n    \"PreviousCompanyUAN\":\"098765\",\r\n    \"PreviousMemberId\":\"8765\",\r\n    \"MemberNameAsPerAadhar\":\"qwerg\",\r\n    \"AADHAR\":\"0987653215432\",\r\n    \"DateOfBirth\":\"2000-05-22\",\r\n    \"Date_Of_Joining\":\"2023-01-23\",\r\n    \"Gender\":\"male\",\r\n    \"FatherOrHusbandName\":\"Prasad\",\r\n    \"Relation\":\"Father\",\r\n    \"Marital_status\":\"Married\",\r\n    \"InternationalWorker\":\"False\",\r\n    \"ContactNumber\":\"1234567890\",\r\n    \"Email\":\"kjhg@cse.com\",\r\n    \"Nationality\":\"Indian\",\r\n    \"wages\":\"567890\",\r\n    \"Qualification\":\"B.Tech\",\r\n    \"CountryOfOrigin\":\"India\",\r\n    \"PassportNumber\":\"09876efbnj987\",\r\n    \"PassportValidFrom\":\"2021-2-09\",\r\n    \"PassportValidTill\":\"2031-2-23\",\r\n    \"PhysicalHadicap\":\"False\",\r\n    \"AccountNumber\":\"098765431345\",\r\n    \"IFSCcode\":\"sdf2345gf\",\r\n    \"NameAsPerBank\":\"okjfdwerth\",\r\n    \"PAN\":\"12345jht34\",\r\n    \"NameAsPerPan\":\"asdpoiuyt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.154.20.135:8000/api/selectedcandidate/updatePFdetail",
+					"protocol": "http",
+					"host": [
+						"10",
+						"154",
+						"20",
+						"135"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"selectedcandidate",
+						"updatePFdetail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
